@@ -1,4 +1,37 @@
 body {
+    transition: background-color 0.3s ease;
+}
+
+.light-mode {
+    background-color: #ffffff;
+    color: #333333;
+}
+
+.dark-mode {
+    background-color: #333333;
+    color: #ffffff;
+}
+
+#mode-toggle{
+    margin-top: 2px;
+    text-decoration: none;
+    background-color: black;
+    border: black;
+    color: #34495e;
+    font-size: .99em;
+    padding: 10px 15px;
+    text-transform: uppercase;
+    text-align: center;
+    display: block;
+}
+
+
+#mode-toggle:hover {
+    color: #718daa;
+}
+
+
+body {
     font-family: 'Montserrat', sans-serif;
     line-height: 1.6;
     margin: 0;
