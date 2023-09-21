@@ -9,12 +9,19 @@ ul {
     margin: 0;
     padding: 0;
     list-style: none;
+    position: relative;
 }
 
-h2,
-h3,
-a,
-.language-label {
+header ul li
+{
+    position: relative; 
+}
+
+header ul li a{
+    position: relative;
+}
+
+h2,h3,a, .language-label {
     color: #34495e;
 }
 
@@ -23,9 +30,12 @@ a {
 }
 
 .logo {
+    position: relative;
     margin: 0;
     font-size: 1.45em;
 }
+
+
 
 .main-nav {
     display: flex;
@@ -52,15 +62,17 @@ a {
 }
 
 .header {
+    width: 100%;
     display: flex;
     padding-top: .5em;
     padding-bottom: .5em;
-    z-index: 1;
-    position: absolute;
-    background-color: none;
+    z-index: 100000;
+    position: fixed;
+    background-color: grey;
 }
 
-.language-option {
+.language-option 
+{
     background-color: none;
     color: #34495e;
 }
@@ -70,7 +82,8 @@ a {
     display: inline-block;
 }
 
-.dropdown-content {
+.dropdown-content 
+{
     display: none;
     position: absolute;
     background-color: #f9f9f9;
@@ -100,6 +113,7 @@ a {
     height: 525px;
     background-color: black;
 }
+
 
 #hero-headline {
     margin-left: 7%;
