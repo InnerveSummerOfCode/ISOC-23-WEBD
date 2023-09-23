@@ -1,3 +1,27 @@
+let currentMode = 'light'; // Default to light mode
+
+// Function to toggle between light and dark modes
+document.querySelector('#mode-toggle').addEventListener('click',function toggle(){
+  if (currentMode === 'light') {
+    document.body.classList.remove('light-mode');
+    document.body.classList.add('dark-mode');
+    currentMode = 'dark';
+    document.querySelector('#mode-toggle').innerHTML = "Light-Mode";
+    
+} else {
+    document.body.classList.remove('dark-mode');
+    document.body.classList.add('light-mode');
+    currentMode = 'light';
+    document.querySelector('#mode-toggle').innerHTML = "Dark-Mode";
+}
+});
+
+
+
+//toggle();
+
+
+
 let navbarMenu = document.querySelector('.navbar-menu');
 let dropdownIsOpen = false;
 
@@ -48,4 +72,14 @@ function handleSmallScreens() {
 }
 
 handleSmallScreens();
+
+
+   
+
+
+
+
+
+
+
 
