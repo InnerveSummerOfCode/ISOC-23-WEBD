@@ -11,57 +11,75 @@
 
 <body>
   <!-- navbar -->
-  
-    <header class="header">
-      <h1 class="logo"><a href="#"><span style="color:#7b00d3; font-size: 25pt;">ISOC</span>eum</a></h1>
-      <ul class="main-nav">
-        <li><a href="#" class="active">Home</a></li>
-        <li><a href="#">Gallery</a></li>
-        <li><a href="#">Tickets & Visit</a></li>
-        <li><a href="#">Art & Stories</a></li>
-        <li><a href="#">Contact Us</a></li>
-        <li class="language-option">
-          <div class="dropdown">
-            <span>Language | <strong>EN</strong></span>
-            <!-- change "en" as per language -->
-            <div class="dropdown-content">
-              <p>English <img src="./Languages/USA.jpg"></p>
-              <p>French <img src="./Languages/France.jpg"></p>
-              <p>German <img src="./Languages/Germany.png"></p>
-              <p>Spanish <img src="./Languages/Spain.jpg"></p>
-            </div>
+
+  <header class="header">
+    <h1 class="logo" style="padding-left: 10px;"><a href="/isoc.html"><span
+          style="color:#7b00d3; font-size: 1.5rem">ISOC</span>eum</a></h1>
+    <ul class="main-nav" style="padding-right: 10px;">
+      <li><a href="#hero" class="active">Home</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#ticket">Tickets & Visit</a></li>
+      <li><a href="#stories">Art & Stories</a></li>
+      <li><a href="#contact">Contact Us</a></li>
+      <li class="language-option">
+        <div class="dropdown">
+          <span>Language | <strong>EN</strong></span>
+          <!-- change "en" as per language -->
+          <div class="dropdown-content">
+            <p>English <img src="./Languages/USA.jpg"></p>
+            <p>French <img src="./Languages/France.jpg"></p>
+            <p>German <img src="./Languages/Germany.png"></p>
+            <p>Spanish <img src="./Languages/Spain.jpg"></p>
           </div>
+        </div>
+      </li>
+      <li><button
+          style=" border: none; border-radius: 24px; padding: 10px 15px; background-color: #001f61; color: white;">Sign-Up/Login</button>
+      </li>
+    </ul>
+    <ul class="mobile-nav">
+      <span style="padding-right: 10px;">Menu</span>
+      <!-- change "en" as per language -->
+      <div class="mobile-dropdown-content">
+        <li><a href="#hero" class="active">Home</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#ticket">Tickets & Visit</a></li>
+        <li><a href="#stories">Art & Stories</a></li>
+        <li><a href="#contact">Contact Us</a></li>
+        <li><button
+            style=" border: none; border-radius: 24px; padding: 10px 15px; background-color: #001f61; color: white;">Sign-Up/Login</button>
         </li>
-      </ul>
-    </header>
+      </div>
+    </ul>
+  </header>
 
 
   <!-- hero -->
-  <section>
+  <section id="hero">
     <div class="hero-sec">
-      <div id="hero-headline">
+      <div>
         <div class="main">
           <h1>The ISOC-eum </h1>
-            </div>
-          </h1>
         </div>
+        </h1>
       </div>
+    </div>
     </div>
   </section>
 
   <!-- ongoing exhibitions -->
-  <section>
+  <section id="ticket">
     <div class="ongoing-exhib">
       <p> ONGOING EXHIBITIONS</p>
     </div>
     <div class="ongoing-exhib-grid">
       <div class="ongoing-exhib-grid-item oe-flex">
         <a href="page.html" target="_blank">
-        <img class="oe-flex-item" src="./Ongoing Exhib/Artifact-1.jpg">
-        <h3 class="oe-flex-item">Timeless Treasures</h3>
-        <p class="oe-flex-item">
-          Day | Date | Time | Venue
-        </p>
+          <img class="oe-flex-item" src="./Ongoing Exhib/Artifact-1.jpg">
+          <h3 class="oe-flex-item">Timeless Treasures</h3>
+          <p class="oe-flex-item">
+            Day | Date | Time | Venue
+          </p>
       </div>
       <div class="ongoing-exhib-grid-item oe-flex">
         <!-- <a href="page.html" target="_blank"> -->
@@ -74,17 +92,17 @@
 
       <div class="ongoing-exhib-grid-item oe-flex">
         <a href="page.html" target="_blank">
-        <img class="oe-flex-item" src="./Ongoing Exhib/Artifact-3.jpg">
-        <h3 class="oe-flex-item">Relics Unveiled</h3>
-        <p class="oe-flex-item">
-          Day | Date | Time | Venue
-        </p>
+          <img class="oe-flex-item" src="./Ongoing Exhib/Artifact-3.jpg">
+          <h3 class="oe-flex-item">Relics Unveiled</h3>
+          <p class="oe-flex-item">
+            Day | Date | Time | Venue
+          </p>
       </div>
     </div>
   </section>
 
   <!-- our exhibition gallery -->
-  <section>
+  <section id="gallery">
     <div class="our-gallery">
       <p style="color: #764c03; padding-top: 40px;">OUR EXHIBITION GALLERY</p>
     </div>
@@ -110,7 +128,7 @@
   </section>
 
   <!-- artisan about -->
-  <section>
+  <section id="stories">
     <div class="artisan-hub">
       <p>ARTISAN EXPLORATION HUB</p>
     </div>
@@ -175,7 +193,7 @@
   </section>
 
   <!-- our newsletter -->
-  <section id="newsletter">
+  <div id="contact">
     <div class="box">
       <img src="https://lh3.google.com/u/0/d/1-WTX2Kw4ZlgLnwT9gYyFOxVXowT9eS-t=w1375-h881-iv1" alt="" />
       <h2>Subscribe to our Newsletter</h2>
@@ -191,160 +209,116 @@
     <button class="floating-btn">
       Get in Touch
     </button>
-  </section>
+    </>
 
-  <footer class="footer">
-    <!-- Grid container -->
-    <div class="footer-container">
-      <!-- Section: Social media -->
-      <section class="social-media">
-        <!-- Facebook -->
-        <a class="btn btn-social btn-facebook" href="#!" role="button">
-          <i class="fab fa-facebook-f"></i>
-        </a>
-        <!-- Twitter -->
-        <a class="btn btn-social btn-twitter" href="#!" role="button">
-          <i class="fab fa-twitter"></i>
-        </a>
-        <!-- Google -->
-        <a class="btn btn-social btn-google" href="#!" role="button">
-          <i class="fab fa-google"></i>
-        </a>
-        <!-- Instagram -->
-        <a class="btn btn-social btn-instagram" href="#!" role="button">
-          <i class="fab fa-instagram"></i>
-        </a>
-        <!-- Linkedin -->
-        <a class="btn btn-social btn-linkedin" href="#!" role="button">
-          <i class="fab fa-linkedin-in"></i>
-        </a>
-        <!-- Github -->
-        <a class="btn btn-social btn-github" href="#!" role="button">
-          <i class="fab fa-github"></i>
-        </a>
-      </section>
-      <!-- Section: Social media -->
+    <footer class="footer">
+      <!-- Grid container -->
+      <div class="footer-container">
 
-      <!-- Section: Newsletter Form -->
-      <section class="newsletter">
-        <form action="">
-          <!--Grid row-->
-          <div class="newsletter-row">
-            <!--Grid column-->
-            <div class="col-auto newsletter-text">
-              <p class="pt-2">
-                <strong>Sign up for our newsletter</strong>
-              </p>
-            </div>
-            <!--Grid column-->
 
-            <!--Grid column-->
-            <div class="col-md-5 col-12">
-              <!-- Email input -->
-              <div class="form-outline form-white mb-4">
-                <input
-                  type="email"
-                  id="newsletter-email"
-                  class="form-control"
-                />
-                <label class="form-label" for="newsletter-email"
-                  >Email address</label
-                >
+        <!-- Section: Newsletter Form -->
+        <section class="newsletter">
+          <form action="">
+            <!--Grid row-->
+            <div class="newsletter-row">
+              <!--Grid column-->
+              <div class="col-auto newsletter-text">
+                <p class="pt-2">
+                  <strong>Sign up for our newsletter</strong>
+                </p>
               </div>
+              <!--Grid column-->
+
+              <!--Grid column-->
+              <div class="col-md-5 col-12">
+                <!-- Email input -->
+                <div class="form-outline form-white mb-4">
+                  <input type="email" id="newsletter-email" class="form-control" />
+                  <label class="form-label" for="newsletter-email">Email address</label>
+                </div>
+              </div>
+              <!--Grid column-->
+            </div>
+            <!--Grid row-->
+          </form>
+        </section>
+        <!-- Section: Newsletter Form -->
+
+        <!-- Section: Text -->
+        <section class="footer-text">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt
+            distinctio earum repellat quaerat voluptatibus placeat nam, commodi
+            optio pariatur est quia magnam eum harum corrupti dicta, aliquam
+            sequi voluptate quas.
+          </p>
+        </section>
+        <!-- Section: Text -->
+
+        <!-- Section: Footer Links -->
+        <section class="footer-links">
+          <!--Grid row-->
+          <div class="row1">
+            <!--Grid column-->
+            <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+              <h5 class="text-uppercase">Links</h5>
+              <ul class="list-unstyled mb-0">
+                <li><a href="#!" class="footer-link">Link 1</a></li>
+                <li><a href="#!" class="footer-link">Link 2</a></li>
+              </ul>
             </div>
             <!--Grid column-->
+          </div>
 
+          <div class="row2">
             <!--Grid column-->
-            <div class="col-auto newsletter-button">
-              <!-- Submit button -->
-              <button type="submit" class="btn btn-outline-light mb-4">
-                Subscribe
-              </button>
+            <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+              <h5 class="text-uppercase">Links</h5>
+              <ul class="list-unstyled mb-0">
+                <li><a href="#!" class="footer-link">Link 1</a></li>
+                <li><a href="#!" class="footer-link">Link 2</a></li>
+              </ul>
+            </div>
+            <!--Grid column-->
+          </div>
+
+          <div class="row3">
+            <!--Grid column-->
+            <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+              <h5 class="text-uppercase">Links</h5>
+              <ul class="list-unstyled mb-0">
+                <li><a href="#!" class="footer-link">Link 1</a></li>
+                <li><a href="#!" class="footer-link">Link 2</a></li>
+              </ul>
+            </div>
+            <!--Grid column-->
+          </div>
+
+          <div class="row4">
+            <!--Grid column-->
+            <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+              <h5 class="text-uppercase">Links</h5>
+              <ul class="list-unstyled mb-0">
+                <li><a href="#!" class="footer-link">Link 1</a></li>
+                <li><a href="#!" class="footer-link">Link 2</a></li>
+              </ul>
             </div>
             <!--Grid column-->
           </div>
           <!--Grid row-->
-        </form>
-      </section>
-      <!-- Section: Newsletter Form -->
+        </section>
+        <!-- Section: Footer Links -->
+      </div>
+      <!-- Grid container -->
 
-      <!-- Section: Text -->
-      <section class="footer-text">
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt
-          distinctio earum repellat quaerat voluptatibus placeat nam, commodi
-          optio pariatur est quia magnam eum harum corrupti dicta, aliquam
-          sequi voluptate quas.
-        </p>
-      </section>
-      <!-- Section: Text -->
-
-      <!-- Section: Footer Links -->
-      <section class="footer-links">
-        <!--Grid row-->
-        <div class="row1">
-          <!--Grid column-->
-          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-            <h5 class="text-uppercase">Links</h5>
-            <ul class="list-unstyled mb-0">
-              <li><a href="#!" class="footer-link">Link 1</a></li>
-              <li><a href="#!" class="footer-link">Link 2</a></li>
-            </ul>
-          </div>
-          <!--Grid column-->
-        </div>
-
-        <div class="row2">
-          <!--Grid column-->
-          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-            <h5 class="text-uppercase">Links</h5>
-            <ul class="list-unstyled mb-0">
-              <li><a href="#!" class="footer-link">Link 1</a></li>
-              <li><a href="#!" class="footer-link">Link 2</a></li>
-            </ul>
-          </div>
-          <!--Grid column-->
-        </div>
-
-        <div class="row3">
-          <!--Grid column-->
-          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-            <h5 class="text-uppercase">Links</h5>
-            <ul class="list-unstyled mb-0">
-              <li><a href="#!" class="footer-link">Link 1</a></li>
-              <li><a href="#!" class="footer-link">Link 2</a></li>
-            </ul>
-          </div>
-          <!--Grid column-->
-        </div>
-
-        <div class="row4">
-          <!--Grid column-->
-          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-            <h5 class="text-uppercase">Links</h5>
-            <ul class="list-unstyled mb-0">
-              <li><a href="#!" class="footer-link">Link 1</a></li>
-              <li><a href="#!" class="footer-link">Link 2</a></li>
-            </ul>
-          </div>
-          <!--Grid column-->
-        </div>
-        <!--Grid row-->
-      </section>
-      <!-- Section: Footer Links -->
-    </div>
-    <!-- Grid container -->
-
-    <!-- Copyright -->
-    <div class="copyright">
-      © 2020 Copyright:
-      <a class="text-white" href="https://mdbootstrap.com/"
-        >MDBootstrap.com</a
-      >
-    </div>
-    <!-- Copyright -->
-  </footer>
-  <script src="./isoc.js"></script>
+      <!-- Copyright -->
+      <div class="copyright">
+        © 2020 Copyright:
+        <a class="text-white" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+      </div>
+      <!-- Copyright -->
+    </footer>
+    <script src="./isoc.js"></script>
 </body>
 
 </html>
