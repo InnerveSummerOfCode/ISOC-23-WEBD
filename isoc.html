@@ -6,6 +6,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" href="./Assets/Logo.png" sizes="64x64">
   <link rel="stylesheet" href="./isoc.css">
+  <script
+  src="https://kit.fontawesome.com/e7492bef49.js"
+  crossorigin="anonymous"></script> 
+  <link rel="stylesheet" href="./css/dark-light-mode.css">
   <title>ISOCeum | Home</title>
 </head>
 
@@ -20,6 +24,7 @@
         <li><a href="#">Tickets & Visit</a></li>
         <li><a href="#">Art & Stories</a></li>
         <li><a href="#">Contact Us</a></li>
+        
         <li class="language-option">
           <div class="dropdown">
             <span>Language | <strong>EN</strong></span>
@@ -34,7 +39,12 @@
         </li>
       </ul>
     </header>
-
+    <div class="dark-light-toggle" style="z-index: 1;">
+      <button id="dark-mode-toggle" class="btn" aria-label="Toggle Dark Mode">
+        <i class="fas fa-moon"></i>
+      </button>
+      <span class="toggle-label"></span>
+    </div>
 
   <!-- hero -->
   <section>
@@ -260,6 +270,7 @@
               <button type="submit" class="btn btn-outline-light mb-4">
                 Subscribe
               </button>
+      
             </div>
             <!--Grid column-->
           </div>
@@ -344,7 +355,24 @@
     </div>
     <!-- Copyright -->
   </footer>
-  <script src="./isoc.js"></script>
+  <script src="./isoc.js">
+  </script>
+  <script>
+    const darkModeToggle = document.getElementById('dark-mode-toggle');
+    const body = document.body;
+  
+    darkModeToggle.addEventListener('click', () => {
+      if (body.classList.contains('dark-mode')) {
+        // If in dark mode, switch to light mode
+        body.classList.remove('dark-mode');
+        darkModeToggle.innerHTML = '<i class="fas fa-moon"></i>';
+      } else {
+        // If in light mode, switch to dark mode
+        body.classList.add('dark-mode');
+        darkModeToggle.innerHTML = '<i class="fas fa-sun"></i>'; // Use a different icon for light mode
+      }
+    });
+  </script>
 </body>
 
 </html>

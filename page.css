@@ -109,6 +109,7 @@ section{
     padding: 3rem 2rem;
     text-align: center;
     transform-origin: top center;
+    border-radius: 4%;
 }
 
 
@@ -155,7 +156,7 @@ section{
 
 
 .cheese-art .wrapper .cheese-card .img{
-    padding: 2.5rem 0;
+    padding: 0;
 }
 
 .cheese-art .wrapper .cheese-card .img img{
@@ -166,7 +167,6 @@ section{
     color: white;
     font-size: 2.5rem;
     margin: 1rem 0;
-
 }
 
 .cheese-art .wrapper .cheese-card .content .stars{
