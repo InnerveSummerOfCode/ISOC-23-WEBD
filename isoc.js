@@ -1,4 +1,4 @@
-let navbarMenu = document.querySelector('.navbar-menu');
+let navbarMenu = document.querySelector('.main-nav');
 let dropdownIsOpen = false;
 
 // Handle dropdown menu toggle
@@ -37,15 +37,39 @@ document.body.addEventListener('click', (event) => {
 });
 
 // Open links in mobiles
-function handleSmallScreens() {
-  document.querySelector('.navbar-toggler').addEventListener('click', () => {
-    if (!navbarMenu.classList.contains('active')) {
-      navbarMenu.classList.add('active');
+// function handleSmallScreens() {
+//   document.querySelector('.navbar-toggler').addEventListener('click', () => {
+//     if (!navbarMenu.classList.contains('active')) {
+//       navbarMenu.classList.add('active');
+//     } else {
+//       navbarMenu.classList.remove('active');
+//     }
+//   });
+// }
+// Dark Mode Toggle Function
+function toggleDarkMode() {
+  const body = document.body;
+  const darkModeToggle = document.getElementById('dark-mode-toggle');
+  const textContent = document.getElementById('mode-label');
+
+  darkModeToggle.addEventListener('change', () => {
+    if (darkModeToggle.checked) {
+      // Dark Mode
+      body.classList.add('dark-mode');
+      textContent.innerHTML = 'Dark Mode';
     } else {
-      navbarMenu.classList.remove('active');
+      // Light Mode
+      body.classList.remove('dark-mode');
+      textContent.textContent = 'Light Mode';
     }
   });
 }
 
-handleSmallScreens();
+// Initialize Dark Mode Toggle
+toggleDarkMode();
+
+
+// Initialize Dark Mode Toggle
+toggleDarkMode();
+//handleSmallScreens();
 
