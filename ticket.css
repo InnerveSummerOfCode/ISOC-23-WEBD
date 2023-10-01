@@ -1,0 +1,114 @@
+/* styles.css */
+
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Set a black background color for the body */
+body {
+    background-image: url("https://c1.wallpaperflare.com/preview/153/458/359/art-gallery-gallery-museum-exhibition.jpg");
+    background-color: #000;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Style the header */
+header {
+    background-color: #111;
+    text-align: center;
+    padding: 20px 0;
+}
+
+header h1 {
+    font-size: 36px;
+    color: #7b00d3;
+}
+
+/* Style the main content */
+main {
+    padding: 20px;
+}
+
+/* Style the exhibition cards */
+.exhibition-card {
+    background-color: rgba(0, 0, 0, 0.404);
+    border-radius: 5px;
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+}
+
+.exhibition-card h3 {
+    color: wheat;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+/* Style the "Add to Cart" button */
+.exhibition-card button {
+    background-color: #7b00d3;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/* Style the shopping cart */
+#shopping-cart {
+    background-color: #333;
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.cart-item {
+    background-color: #111;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+.cart-item p {
+    color: #fff;
+    font-size: 16px;
+    margin: 5px 0;
+}
+
+.cart-item button {
+    background-color: #ff0000;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+/* Style the footer */
+footer {
+    background-color: #111;
+    text-align: center;
+    padding: 20px 0;
+    color: #fff;
+}
+
+/* Style the submit button in the checkout section */
+#checkout button[type="submit"] {
+    background-color: #7b00d3;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+/* Add hover effects for buttons */
+button:hover {
+    opacity: 0.8;
+}

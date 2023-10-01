@@ -134,7 +134,25 @@ h1 {
 }
 
 
-
+/* Styling for the "Rate Us" box */
+.rate-us-box {
+    position: fixed;
+    bottom: 20px; /* Adjust this value to change the vertical position */
+    right: 20px; /* Adjust this value to change the horizontal position */
+    background-color: #007bff; /* Background color for the box */
+    color: #fff; /* Text color */
+    padding: 10px 20px; /* Padding for the box */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Change cursor to pointer on hover for a clickable feel */
+    z-index: 9999; /* Ensure it appears above other content */
+  }
+  
+  /* Style for the "Rate Us" text */
+  .rate-us-box p {
+    margin: 0;
+    font-size: 16px;
+  }
+  
 
 #spare-time {
     font-size: 1rem;
@@ -491,7 +509,7 @@ p.oe-flex-item {
 
 .footer-text{
     text-align: center;
-    text-wrap: wrap;
+    flex-wrap: wrap;
 }
 .copyright{
     text-align: center;
