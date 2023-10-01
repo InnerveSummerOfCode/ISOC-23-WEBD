@@ -6,6 +6,11 @@ I created a ContactUs page along with error checks and light and dark mode which
 
 Also made a ticket booking page for the exhibitions and also giving a feature to remove the bookings.
 
+## Access
+
+Access these by using the url:  https://anshify.github.io/ISOC-23-WEBD/
+Then go to contactUs option or the ticket and visit option.
+
 ### Issues solved
 
 IssueNo.1. **Toggle Light and Dark Mode:** Empower users with the ability to seamlessly switch between light and dark modes, thereby elevating their browsing experience. But in the contact page itself.
