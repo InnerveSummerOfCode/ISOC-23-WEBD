@@ -2,7 +2,7 @@
 
 ## Project Overview
 
-I created a ContactUs page with a error checks and light and dark mode which empower users with the ability to seamlessly switch between light and dark modes, thereby elevating their browsing experience.
+I created a ContactUs page along with error checks and light and dark mode which empower users with the ability to seamlessly switch between light and dark modes, thereby elevating their browsing experience.
 
 Also made a ticket booking page for the exhibitions and also giving a feature to remove the bookings.
 
