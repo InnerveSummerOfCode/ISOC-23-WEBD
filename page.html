@@ -8,9 +8,63 @@
       crossorigin="anonymous"
     ></script>
     <link rel="stylesheet" href="page.css" />
+    <link rel="stylesheet" href="./isoc.css">
+    <link rel="stylesheet" href="./css/dark-light-mode.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/footer1.css">
+    <link rel="icon" type="image/png" href="./Assets/Logo.png" sizes="64x64">
+    <link rel="stylesheet" href="./isoc.css">
+    <link rel="stylesheet" href="./css/footer1.css">
+    <script
+    src="https://kit.fontawesome.com/e7492bef49.js"
+    crossorigin="anonymous"></script> 
+    <link rel="stylesheet" href="./css/dark-light-mode.css">.
     <title>Exhibition</title>
   </head>
   <body>
+    <header class="header">
+      <h1 class="logo"><a href="#"><span style="color:#7b00d3; font-size: 25pt;">ISOC</span>eum</a></h1>
+      <ul class="main-nav">
+        <li><a href="#" class="active">Home</a></li>
+        <li><a href="#">Gallery</a></li>
+        <li><a href="#">Tickets & Visit</a></li>
+        <li><a href="#">Art & Stories</a></li>
+        <li><a href="#">Contact Us</a></li>
+        
+        <li class="language-option">
+          <div class="dropdown">
+            <span>Language | <strong>EN</strong></span>
+            <!-- change "en" as per language -->
+            <div class="dropdown-content">
+              <p>English <img src="./Languages/USA.jpg"></p>
+              <p>French <img src="./Languages/France.jpg"></p>
+              <p>German <img src="./Languages/Germany.png"></p>
+              <p>Spanish <img src="./Languages/Spain.jpg"></p>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </header>
+    <div class="dark-light-toggle" style="z-index: 1;">
+      <button id="dark-mode-toggle" class="btn" aria-label="Toggle Dark Mode">
+        <i class="fas fa-moon"></i>
+      </button>
+      <span class="toggle-label"></span>
+    </div>
+  <!-- <div class="dark-light-toggle" style="z-index: 1;">
+    <button id="dark-mode-toggle" class="btn" aria-label="Toggle Dark Mode">
+      <i class="fas fa-moon"></i>
+    </button>
+    <span class="toggle-label"></span>
+  </div>
+    
+        
+    <div class="dark-light-toggle">
+      <button id="dark-mode-toggle" class="btn" aria-label="Toggle Dark Mode">
+        <i class="fas fa-moon"></i> 
+      </button>
+      <span class="toggle-label"></span>
+    </div> -->
     
 
     <section class="home" id="home">
@@ -21,7 +75,7 @@
           Lorem ipsum dolor sit amet consectetur, adipisicing.
           dgvwgcbhjushusncxu shbhbyx sbywd hwbdhbwydb
         </p>
-        <a href="" class="btn">Tickets</a>
+        <!-- <a href="" class="btn">Tickets</a> -->
       </div>
       <div class="image">
         <img
@@ -263,7 +317,7 @@
           </div>
         </div>
 
-        <div class="card">
+        <div id="ApplyBorder" class="card">
           <div class="img">
             <img
               src="https://img.freepik.com/free-photo/woman-arranging-paintings-home_23-2148304906.jpg?w=740&t=st=1695045992~exp=1695046592~hmac=f91a6181b2330c06336ecfd95c7588460875f71e6e59897fc74f276d0e6edc11"
@@ -298,158 +352,52 @@
         </div>
       </div>
     </section>
-
-    <footer class="footer">
-      <!-- Grid container -->
-      <div class="footer-container">
-        <!-- Section: Social media -->
-        <section class="social-media">
-          <!-- Facebook -->
-          <a class="btn btn-social btn-facebook" href="#!" role="button">
-            <i class="fab fa-facebook-f"></i>
-          </a>
-          <!-- Twitter -->
-          <a class="btn btn-social btn-twitter" href="#!" role="button">
-            <i class="fab fa-twitter"></i>
-          </a>
-          <!-- Google -->
-          <a class="btn btn-social btn-google" href="#!" role="button">
-            <i class="fab fa-google"></i>
-          </a>
-          <!-- Instagram -->
-          <a class="btn btn-social btn-instagram" href="#!" role="button">
-            <i class="fab fa-instagram"></i>
-          </a>
-          <!-- Linkedin -->
-          <a class="btn btn-social btn-linkedin" href="#!" role="button">
-            <i class="fab fa-linkedin-in"></i>
-          </a>
-          <!-- Github -->
-          <a class="btn btn-social btn-github" href="#!" role="button">
-            <i class="fab fa-github"></i>
-          </a>
-        </section>
-        <!-- Section: Social media -->
-
-        <!-- Section: Newsletter Form -->
-        <section class="newsletter">
-          <form action="">
-            <!--Grid row-->
-            <div class="newsletter-row">
-              <!--Grid column-->
-              <div class="col-auto newsletter-text">
-                <p class="pt-2">
-                  <strong>Sign up for our newsletter</strong>
-                </p>
-              </div>
-              <!--Grid column-->
-
-              <!--Grid column-->
-              <div class="col-md-5 col-12">
-                <!-- Email input -->
-                <div class="form-outline form-white mb-4">
-                  <input
-                    type="email"
-                    id="newsletter-email"
-                    class="form-control"
-                  />
-                  <label class="form-label" for="newsletter-email"
-                    >Email address</label
-                  >
-                </div>
-              </div>
-              <!--Grid column-->
-
-              <!--Grid column-->
-              <div class="col-auto newsletter-button">
-                <!-- Submit button -->
-                <button type="submit" class="btn btn-outline-light mb-4">
-                  Subscribe
-                </button>
-              </div>
-              <!--Grid column-->
-            </div>
-            <!--Grid row-->
-          </form>
-        </section>
-        <!-- Section: Newsletter Form -->
-
-        <!-- Section: Text -->
-        <section class="footer-text">
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt
-            distinctio earum repellat quaerat voluptatibus placeat nam, commodi
-            optio pariatur est quia magnam eum harum corrupti dicta, aliquam
-            sequi voluptate quas.
-          </p>
-        </section>
-        <!-- Section: Text -->
-
-        <!-- Section: Footer Links -->
-        <section class="footer-links">
-          <!--Grid row-->
-          <div class="row1">
-            <!--Grid column-->
-            <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-              <h5 class="text-uppercase">Links</h5>
-              <ul class="list-unstyled mb-0">
-                <li><a href="#!" class="footer-link">Link 1</a></li>
-                <li><a href="#!" class="footer-link">Link 2</a></li>
-              </ul>
-            </div>
-            <!--Grid column-->
+    <footer class="footer-alt">
+      <div class="container">
+        <div class="row">
+          <div class="footer-col col-md-6">
+            <h4>About ISOC</h4>
+            <ul>
+              <li><a href="#">Our mission</a></li>
+              <li><a href="#">Our team</a></li>
+              <li><a href="#">Contact us</a></li>
+            </ul>
           </div>
-
-          <div class="row2">
-            <!--Grid column-->
-            <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-              <h5 class="text-uppercase">Links</h5>
-              <ul class="list-unstyled mb-0">
-                <li><a href="#!" class="footer-link">Link 1</a></li>
-                <li><a href="#!" class="footer-link">Link 2</a></li>
-              </ul>
-            </div>
-            <!--Grid column-->
+          <div class="footer-col col-md-6">
+            <h4>Follow us</h4>
+            <ul class="social-media">
+              <li><a href="#"><i class="fa fa-facebook-square"></i></a></li>
+              <li><a href="#"><i class="fa fa-twitter-square"></i></a></li>
+              <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+              <li><a href="#"><i class="fa fa-linkedin-square"></i></a></li>
+            </ul>
           </div>
-
-          <div class="row3">
-            <!--Grid column-->
-            <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-              <h5 class="text-uppercase">Links</h5>
-              <ul class="list-unstyled mb-0">
-                <li><a href="#!" class="footer-link">Link 1</a></li>
-                <li><a href="#!" class="footer-link">Link 2</a></li>
-              </ul>
-            </div>
-            <!--Grid column-->
+        </div>
+        <div class="row footer-bottom">
+          <div class="col-md-12">
+            <p>Copyright &copy; 2023 ISOCeum. All rights reserved.</p>
           </div>
-
-          <div class="row4">
-            <!--Grid column-->
-            <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-              <h5 class="text-uppercase">Links</h5>
-              <ul class="list-unstyled mb-0">
-                <li><a href="#!" class="footer-link">Link 1</a></li>
-                <li><a href="#!" class="footer-link">Link 2</a></li>
-              </ul>
-            </div>
-            <!--Grid column-->
-          </div>
-          <!--Grid row-->
-        </section>
-        <!-- Section: Footer Links -->
+        </div>
       </div>
-      <!-- Grid container -->
-
-      <!-- Copyright -->
-      <div class="copyright">
-        © 2020 Copyright:
-        <a class="text-white" href="https://mdbootstrap.com/"
-          >MDBootstrap.com</a
-        >
-      </div>
-      <!-- Copyright -->
     </footer>
+    
+    
+    <script>
+      const darkModeToggle = document.getElementById('dark-mode-toggle');
+      const body = document.body;
+    
+      darkModeToggle.addEventListener('click', () => {
+        if (body.classList.contains('dark-mode')) {
+          // If in dark mode, switch to light mode
+          body.classList.remove('dark-mode');
+          darkModeToggle.innerHTML = '<i class="fas fa-moon"></i>';
+        } else {
+          // If in light mode, switch to dark mode
+          body.classList.add('dark-mode');
+          darkModeToggle.innerHTML = '<i class="fas fa-sun"></i>'; // Use a different icon for light mode
+        }
+      });
+    </script>
     <!-- Footer -->
   </body>
 </html>

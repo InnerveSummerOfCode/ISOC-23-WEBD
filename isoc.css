@@ -349,16 +349,17 @@ p.oe-flex-item {
 
 * {
     box-sizing: border-box;
+    margin: 0px auto;
 }
 
 
 
 
 .box {
-    
+    border: 2px solid black;
     background-color: #ffffff;
     border-radius: 20px;
-    
+    margin: 10px auto;
     padding: 30px;
     text-align: center;
     max-width: 500px;

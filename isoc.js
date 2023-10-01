@@ -1,17 +1,17 @@
-let navbarMenu = document.querySelector('.navbar-menu');
+let navbarMenu = document.querySelector(".navbar-menu");
 let dropdownIsOpen = false;
 
 // Handle dropdown menu toggle
-navbarMenu.addEventListener('click', (event) => {
-  if (event.target.classList.contains('dropdown-toggler')) {
+navbarMenu.addEventListener("click", (event) => {
+  if (event.target.classList.contains("dropdown-toggler")) {
     let target = document.querySelector(`#${event.target.dataset.dropdown}`);
 
     if (target) {
-      if (target.classList.contains('show')) {
-        target.classList.remove('show');
+      if (target.classList.contains("show")) {
+        target.classList.remove("show");
         dropdownIsOpen = false;
       } else {
-        target.classList.add('show');
+        target.classList.add("show");
         dropdownIsOpen = true;
       }
     }
@@ -19,18 +19,19 @@ navbarMenu.addEventListener('click', (event) => {
 });
 
 // Handle closing dropdowns if a user clicks outside
-document.body.addEventListener('click', (event) => {
+document.body.addEventListener("click", (event) => {
   if (dropdownIsOpen) {
-    navbarMenu.querySelectorAll('.dropdown').forEach((dropdown) => {
+    navbarMenu.querySelectorAll(".dropdown").forEach((dropdown) => {
       let targetIsDropdown = dropdown == event.target;
-      let clickedOnDropdownToggle = event.target.classList.contains('dropdown-toggler');
+      let clickedOnDropdownToggle =
+        event.target.classList.contains("dropdown-toggler");
 
       if (clickedOnDropdownToggle) {
         return;
       }
 
       if (!targetIsDropdown && !dropdown.contains(event.target)) {
-        dropdown.classList.remove('show');
+        dropdown.classList.remove("show");
       }
     });
   }
@@ -38,14 +39,13 @@ document.body.addEventListener('click', (event) => {
 
 // Open links in mobiles
 function handleSmallScreens() {
-  document.querySelector('.navbar-toggler').addEventListener('click', () => {
-    if (!navbarMenu.classList.contains('active')) {
-      navbarMenu.classList.add('active');
+  document.querySelector(".navbar-toggler").addEventListener("click", () => {
+    if (!navbarMenu.classList.contains("active")) {
+      navbarMenu.classList.add("active");
     } else {
-      navbarMenu.classList.remove('active');
+      navbarMenu.classList.remove("active");
     }
   });
 }
 
 handleSmallScreens();
-
