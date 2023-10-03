@@ -43,7 +43,7 @@ a {
 }
 
 .main-nav a {
-    color: #34495e;
+    color: white;
     font-size: .99em;
 }
 
@@ -62,7 +62,7 @@ a {
 
 .language-option {
     background-color: none;
-    color: #34495e;
+    color: chartreuse;
 }
 
 .dropdown {
@@ -98,7 +98,9 @@ a {
 /* hero starts here */
 .hero-sec {
     height: 525px;
-    background-color: black;
+    background-image: url("https://t3.ftcdn.net/jpg/04/39/04/42/360_F_439044220_qmQeFV1wWxsquPU4PbiMq9urTGVsUMjB.jpg");
+    width: 100%;
+    height: 5%;
 }
 
 #hero-headline {
@@ -118,7 +120,7 @@ a {
 }
 
 .main {
-    height: 100vh;
+    height: 60vh;
     width: 100%;
     display: flex;
     align-items: center;
