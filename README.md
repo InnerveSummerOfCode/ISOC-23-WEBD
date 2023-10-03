@@ -8,7 +8,7 @@ Welcome to my website's open-source project! I've been hard at work making sever
 
 Access the website by using the url:  https://anshify.github.io/ISOC-23-WEBD/
 
-### Issues solved
+### Issues solved :bulb:
 
 IssueNo.1. **Toggle Light and Dark Mode:** Empower users with the ability to seamlessly switch between light and dark modes, thereby elevating their browsing experience. But in the contact page itself.
 
