@@ -9,7 +9,7 @@ Also made a ticket booking page for the exhibitions and also giving a feature to
 ## Access
 
 Access these by using the url:  https://anshify.github.io/ISOC-23-WEBD/
-Then go to contactUs option or the ticket and visit option.
+
 
 ### Issues solved
 
