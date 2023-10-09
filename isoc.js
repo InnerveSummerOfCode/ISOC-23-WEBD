@@ -1,3 +1,4 @@
+
 let navbarMenu = document.querySelector('.navbar-menu');
 let dropdownIsOpen = false;
 
